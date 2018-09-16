@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calorie Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+</head>
+
+<body>
+    <div class="container">
+        <h5>ADD FOOD</h5>
+        <form id="food-form">
+            <div>
+                <label for="Description"></label>
+                <input type="text" id="description" class="u-full-width">
+            </div>
+            <div>
+                <label for="Amount"></label>
+                <input type="text" id="amount" class="u-full-width">
+            </div>
+            <div>
+                <label for="Unit"></label>
+                <input type="text" id="unit" class="u-full-width">
+            </div>
+            <div>
+                <label for="Calories"></label>
+                <input type="text" id="calories" class="u-full-width">
+            </div>
+        </form>
+        <input class="button-primary u-full-width" type="submit" value="submit">
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Unit</th>
+                    <th>Calories</th>
+                </tr>
+            </thead>
+            <tbody id="food-list">
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
